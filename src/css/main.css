@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+#q4Wrapper {
+  background-color: #2A3035;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+#q4Wrapper h1, #q4Wrapper h3 {
+  margin: 0;
+}
+#q4Wrapper h1 {
+  font-size: 48px;
+}
+#q4Wrapper h3 {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+#q4Wrapper header, #q4Wrapper footer {
+  background-color: #22272B;
+}
+#q4Wrapper header {
+  padding: 20px;
+}
+#q4Wrapper footer {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#q4Wrapper article {
+  text-align: center;
+}
+#q4Wrapper article img {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+#q4Wrapper a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease;
+}
+#q4Wrapper a:hover {
+  transform: scale(1.05);
+}
+#q4Wrapper a span {
+  opacity: 0.5;
+}
+
+.layout_inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+.layout_header {
+  margin-bottom: 30px;
+  text-align: center;
+  background: #23272A;
+}
+
+/* Begin styling the report items here! */
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+body{
+  background:#2B3034;
+}
+.layout_title{
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 60px;
+  line-height: 60px;
+  font-family: "Roboto", sans-serif;
+}
+.reports{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(0, 1fr) 30px minmax(0, 1fr) 30px minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+.reports_item{
+  text-align: center;
+  display: none;
+  margin-bottom: 40px;
+}
+.reports_item a{
+  display:block;
+  margin-bottom: 20px;
+}
+.reports_item a img{
+  -webkit-box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 9px 1px rgba(0,0,0,0.4);
+}
+.reports_title{
+  margin: 0;
+}
+.reports_title a{
+  color: #fff;
+  display:inline-block;
+  margin-bottom: 0;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+.reports_title a span{
+  color: #909293;
+}
+.reports_docs{
+  background: #23272A;
+  padding: 8px 0;
+  border-radius: 8px;
+}
+.load_more_wrapper{
+  text-align: center;
+  margin: 20px 0;
+}
+#loadMore{
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  background: #23272A;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+#loadMore:hover{
+  background: #fff;
+  color: #23272A;;
+}
+.noContent{
+  background: transparent!important;
+  color: #fff!important;
+}
+@media screen and (max-width: 768px){
+  .reports{
+    -ms-grid-columns: (minmax(0, 1fr))[2];
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .layout_title{
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 600px){
+  .reports{
+    display:block;
+  }
+  .layout_title{
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
